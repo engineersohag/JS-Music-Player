@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS Music Player</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+	
+	<div class="container">
+		<div class="music-player">
+			<nav>
+				<div class="circle">
+					<i class='bx bx-chevron-left'></i>
+				</div>
+				<div class="circle">
+					<i class='bx bx-dots-horizontal-rounded'></i>
+				</div>
+			</nav>
+
+			<img src="img/media.jpg" alt=".." class="song-img">
+			<h2>Amar Sonar Bangla</h2>
+			<p>Sohag Hosen From Bangladesh</p>
+
+			<audio id="song">
+				<source src="img/song.mp3" type="audio/mpeg">
+			</audio>
+			<input type="range" value="0" id="progress">
+
+			<div class="controls">
+				<div><i class='bx bx-rewind'></i></div>
+				<div onclick="playPause()"><i class='bx bx-play' id="ctrlIcon"></i></div>
+				<div><i class='bx bx-fast-forward'></i></div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="main.js"></script>
+</body>
+</html>
